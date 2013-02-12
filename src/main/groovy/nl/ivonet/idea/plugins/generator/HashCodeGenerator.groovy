@@ -11,7 +11,7 @@ class HashCodeGenerator {
             PsiElementFactory factory = getFactory(hashCodePsiFields[0])
             StringBuilder methodText = new StringBuilder()
             methodText << "@Override public int ${hashCodeMethodName}() {"
-            methodText << ' return new org.apache.commons.lang.builder.HashCodeBuilder()'
+            methodText << ' return new org.apache.commons.lang3.builder.HashCodeBuilder()'
             if (!psiClass.superClass.name.equals('Object')) {
                 methodText << '.appendSuper(super.hashCode())'
             }

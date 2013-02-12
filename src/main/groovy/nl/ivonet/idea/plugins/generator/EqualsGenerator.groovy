@@ -14,7 +14,7 @@ class EqualsGenerator {
             methodText << ' if (obj == null) {return false;}'
             methodText << ' if (getClass() != obj.getClass()) {return false;}'
             methodText << " final ${psiClass.name} other = (${psiClass.name}) obj;"
-            methodText << ' return new org.apache.commons.lang.builder.EqualsBuilder()'
+            methodText << ' return new org.apache.commons.lang3.builder.EqualsBuilder()'
             if (psiClass != null && !psiClass.superClass.name.equals("Object")) {
                 methodText << '.appendSuper(super.equals(obj))'
             }

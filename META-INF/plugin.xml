@@ -1,5 +1,5 @@
 <idea-plugin version="2" url="https://github.com/IvoNet/ApacheCommonsEqualsHashcode">
-    <name>Equals and HashCode Apache Commons Generator</name>
+    <name>Equals and HashCode Apache Commons(lang3) Generator</name>
     <description>
         <![CDATA[
             Generates equals() and hashCode() using the Apache Commons library.<br/>
